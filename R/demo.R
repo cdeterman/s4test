@@ -14,6 +14,7 @@ setMethod('nrow', signature(x="myClass"),
           function(x) {
             print(class(x))
             print(showMethods("typeof"))
+            print(methods(class = "A"))
             print(typeof(x))
             switch(typeof(x),
                    "myClassA" = "A rows",
